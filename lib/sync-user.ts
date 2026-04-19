@@ -51,7 +51,7 @@ export async function syncCurrentUser() {
           role: isFirstUser ? "admin" : "user",
         },
       });
-      console.log(`New user created: ${email} with role: ${dbUser.role}`);
+      // console.log(`New user created: ${email} with role: ${dbUser.role}`);
     }
     return dbUser;
   } catch (error) {
